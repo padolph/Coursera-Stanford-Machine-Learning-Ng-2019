@@ -48,12 +48,11 @@ x = zeros(n, 1);
 %
 %
 
-
-
-
-
-
-
+% x is already dimensioned correctly and initialized with zeros
+% we can use each value in word_indices as an index into x where to set a 1
+for i = 1:length(word_indices)  % for each word index
+    x(word_indices(i)) = 1;     % use it to know the place to set a 1
+end    
 
 % =========================================================================
     

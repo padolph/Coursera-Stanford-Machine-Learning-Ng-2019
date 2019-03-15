@@ -25,7 +25,7 @@ for epsilon = min(pval):stepsize:max(pval)
 
     predictions = (pval < epsilon);
 
-    % number of true poisitives
+    % number of true positives
     tp = sum(predictions & yval);
 
     % number of false positives
